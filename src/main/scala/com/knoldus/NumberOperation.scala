@@ -44,4 +44,12 @@ class NumberOperation {
       val sum = sumOfNumber(product)
       sum
     }
+  def fibonacci(num: Int): Int = {
+    if(num <= 1) {
+      num
+  }
+  else {
+   fibonacci(num-1) + fibonacci(num-2)
+  }
+  }
 }

@@ -15,5 +15,7 @@ object Application {
     val number = 4
     val sumProduct = operationObject.sumProductOfNumber(number)
     print(s"Sum: $sumProduct")
+    val fibonacciValue = operationObject.fibonacci(number)
+    print(s"Fibonacci : $fibonacciValue")
   }
 }
