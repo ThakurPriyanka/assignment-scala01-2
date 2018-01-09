@@ -1,7 +1,7 @@
 package com.knoldus
 
 class NumberOperation {
-  def indexAddedList(list: List[Int]) = Unit {
+  def indexAddedList(list: List[Int]): Unit = {
     for (item <- list) {
       val index: Int = list.indexOf(item)
       print(s"$index = $item \n")
