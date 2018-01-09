@@ -1,20 +1,23 @@
 package com.knoldus
 
 class NumberOperation {
-  def indexAddedList(list: List[Int]) = {
+  def indexAddedList(list: List[Int]) = Unit {
     for (item <- list) {
       val index: Int = list.indexOf(item)
-      println(s"$index = $item")
+      print(s"$index = $item \n")
     }
   }
 
   def maxElement(xl: List[Int]): Int = {
-    if ((xl.head > xl.tail.head) && (xl.tail.length == 1))
-      return xl.head
-    else if (xl.tail.length == 1)
+    if ((xl.head > xl.tail.head) && (xl.tail.length == 1)) {
+      xl.head
+    }
+    else if (xl.tail.length == 1) {
       xl.tail.head
-    else
+    }
+    else {
       maxElement(xl.tail)
+    }
   }
     def sumProductOfNumber(number: Int): List[Int] = {
       def sumOfNumber(number: Int): Int = {
