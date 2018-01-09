@@ -19,13 +19,13 @@ class NumberOperation {
       maxElement(xl.tail)
     }
   }
-    def sumProductOfNumber(number: Int): List[Int] = {
+    def sumProductOfNumber(number: Int): Int = {
       def sumOfNumber(number: Int): Int = {
-        if (number == 1) {
-          1
+        if (number == 0) {
+          0
         }
         else {
-          val sum = number + sumOfNumber(number - 1)
+          val sum = number % 10 + sumOfNumber(number / 10)
           sum
         }
       }
@@ -40,7 +40,8 @@ class NumberOperation {
         }
       }
       val product = productOfNumber(number)
-      val sum = sumOfNumber(number)
-      List(sum, product)
+
+      val sum = sumOfNumber(product)
+      sum
     }
 }

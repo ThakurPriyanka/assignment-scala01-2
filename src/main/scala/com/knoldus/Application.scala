@@ -12,8 +12,8 @@ object Application {
     operationObject.indexAddedList(list)
     val max = operationObject.maxElement(list)
     print(s"Maximum element: $max \n")
-    val number = 5
+    val number = 4
     val sumProduct = operationObject.sumProductOfNumber(number)
-    print(s"Sum: ${sumProduct(0)} Product: ${sumProduct(1)} \n")
+    print(s"Sum: $sumProduct")
   }
 }
